@@ -10,15 +10,15 @@ public class ProductStock {
         stock.put("Monitor", 3);
         System.out.println("All products:");
 // ===== TODO 2 =====
-        stock.forEach((key, value) -> 
-            System.out.println(key + " -> " + value)
+        stock.forEach((item, count) -> 
+            System.out.println(item + " -> " + count)
         );
 
         System.out.println("\nLow stock products:");
 // ===== TODO 3 =====
-        stock.forEach((key, value) -> {
-            if(value < 6){
-                System.out.println(key + " -> " + value);
+        stock.forEach((item, count) -> {
+            if(count < 6){
+                System.out.println(item + " -> " + count);
             }
         });
     }
